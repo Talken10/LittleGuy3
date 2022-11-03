@@ -63,8 +63,9 @@ class Sprite
     pushMatrix();
       translate(this.location.x, this.location.y);
       noStroke();
-      fill (0,100,255);
-      circle(0,0,10);
+      fill (0,100,255,20);
+      circle(0,0,10);  
+      circle(0,0,min(boxX,boxY));
       translate(-reg.x, -reg.y);
       fill(0,100,255,20);
       rect (0,0,boxX, boxY);

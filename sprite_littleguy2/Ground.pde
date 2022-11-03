@@ -15,7 +15,8 @@ class Ground extends Sprite
   {
     if (this.location.x < -this.boxX - (width/2))
     {
-      this.location.x = -(width/2)+ (this.boxX * 2.0);
+      this.location.x = -(width/2)+ (this.boxX * (nGround - 1));
+      this.currentAni = floor(random(0, this.nAni));
     }//if
   }//end check
   
